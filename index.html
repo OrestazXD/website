@@ -58,6 +58,7 @@
           </a>
           </a>
           </a>
+          
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
       </div>
@@ -114,7 +115,7 @@
                       ► Minecraft serverių kurėjas.👀
                     </p>
                     <p class="lead">
-                     ► © LŽ Įkūrėjas🍋
+                     ► © LŽ Kurėjas🍋
                     </p>
                     <iframe height="80px" width="300px" frameborder="0" src=https://livecounts.io/embed/youtube-live-subscriber-counter/UCYyYaOL8rOg3CmpFI2efTOw style="border: 0; width:300px; height:80px;"></iframe>
                   </div>
@@ -242,91 +243,6 @@
               </div>
             </div>
           </div>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comment System with Saving</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-    .comment {
-      margin-bottom: 20px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .comment p {
-      margin: 0;
-    }
-  </style>
-</head>
-<body>
-  <h1>Comment System with Saving</h1>
-  
-  <!-- Form for adding new comments -->
-  <form id="commentForm">
-    <textarea id="commentText" placeholder="Write your comment here..." required></textarea>
-    <br>
-    <input type="text" id="authorName" placeholder="Your Name" required>
-    <br>
-    <button type="submit">Post Comment</button>
-  </form>
-
-  <!-- Container for displaying comments -->
-  <div id="commentsContainer"></div>
-
-  <script>
-    // Function to handle form submission
-    document.getElementById('commentForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent default form submission
-      
-      // Get input values
-      var commentText = document.getElementById('commentText').value;
-      var authorName = document.getElementById('authorName').value;
-
-      // Create new comment element
-      var commentElement = document.createElement('div');
-      commentElement.classList.add('comment');
-      commentElement.innerHTML = '<p><strong>' + authorName + ':</strong> ' + commentText + '</p>';
-
-      // Append new comment to comments container
-      document.getElementById('commentsContainer').appendChild(commentElement);
-
-      // Save the comment to the backend
-      saveComment(authorName, commentText);
-
-      // Clear form fields
-      document.getElementById('commentText').value = '';
-      document.getElementById('authorName').value = '';
-    });
-
-    // Function to save comment to the backend
-    function saveComment(author, text) {
-      // You would typically make an AJAX request here to send the comment data to your backend server
-      // Example using Fetch API:
-      /*
-      fetch('/save-comment', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          author: author,
-          text: text
-        })
-      })
-      .then(response => {
-        if (response.ok) {
-          console.log('Comment saved successfully');
-        } else {
-          console.error('Failed to save comment');
-        }
-      })
-      .catch(error => {
-        console.error('Error saving comment:', error);
-      });
-      */
-    }
-  </script>
 
 
   </main><!-- End #main -->
@@ -360,6 +276,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+          
 
 </body>
 
