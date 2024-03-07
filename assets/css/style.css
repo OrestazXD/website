@@ -971,6 +971,8 @@ a:hover {
 
 .work-content {
   padding: 2rem 3% 1rem 4%;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
 }
 
 .work-content .w-more {
