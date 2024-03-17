@@ -8,21 +8,6 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-.container {
- display: grid;
- align-items: center; 
- grid-template-columns: 1fr 1fr 1fr;
- column-gap: 5px;
-}
-
-img {
-  max-width: 100%;
-  max-height:100%;
-}
-
-.text {
-  font-size: 70px;
-}
 body {
   background-color: #f5f5f5;
   color: #4e4e4e;
