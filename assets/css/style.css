@@ -768,10 +768,15 @@ a:hover {
   opacity: 0.9;
 }
 
+.hero.title { font-family: Move Sans; }
+
+}
+
 .hero .hero-title {
   color: #fff;
   font-weight: 600;
   font-size: 3rem;
+
 }
 
 @media (min-width: 768px) {
